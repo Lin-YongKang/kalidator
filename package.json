@@ -1,7 +1,7 @@
 {
-  "name": "validator",
+  "name": "kalidator",
   "version": "1.0.0",
-  "description": "",
+  "description": "validator",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "node ./node_modules/jasmine/bin/jasmine"
   },
-  "author": "",
+  "author": "Lin-YongKang",
   "license": "ISC",
   "devDependencies": {
     "jasmine": "^2.8.0"
