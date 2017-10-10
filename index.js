@@ -4,10 +4,12 @@ const regular = require('./src/regular');
 const v = {
     extendRule: {},
     rule(name, sign = "") {
+        if (typeof name !== 'string' || typeof sign !== 'string') throw new Error("name and sign need type string");
+        const that = this;
         return {
             test(...args) {
                 return () => {
-                    return (rule[name] || v.extendRule[name])(...args).catch((tips = "") => {
+                    return (rule[name] || that.extendRule[name])(...args).catch((tips = "") => {
                         throw {
                             rule: name,
                             sign,
@@ -36,7 +38,7 @@ const v = {
         });
     },
     extend(rule) {
-        return Object.assign({ extendRule: Object.assign({}, v.extendRule, rule) }, v);
+        return Object.assign({}, this, { extendRule: Object.assign({}, this.extendRule, rule) });
     }
 }
 

@@ -1,4 +1,4 @@
-const regular = require('../regular');
+const regular = require('./regular');
 
 const resolve = Promise.resolve.bind(Promise);
 const reject = Promise.reject.bind(Promise);
