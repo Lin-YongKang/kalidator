@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "jasmine"
+    "test": "node ./node_modules/jasmine/bin/jasmine"
   },
   "author": "",
   "license": "ISC",
