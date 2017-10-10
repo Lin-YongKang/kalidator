@@ -9,7 +9,7 @@
   "scripts": {
     "test": "node ./node_modules/jasmine/bin/jasmine"
   },
-  "author": "Lin-YongKang",
+  "author": "lin-yongkang",
   "license": "ISC",
   "devDependencies": {
     "jasmine": "^2.8.0"
